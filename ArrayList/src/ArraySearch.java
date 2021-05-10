@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class arraySearch {
+public class ArraySearch {
 
     public static boolean findElement(int[] a, int k) {
 
