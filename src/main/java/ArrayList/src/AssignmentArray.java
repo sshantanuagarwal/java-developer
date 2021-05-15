@@ -1,8 +1,9 @@
 package ArrayList.src;
 
+import java.util.Arrays;
 import java.util.Random;
 
-public class Assignment {
+public class AssignmentArray {
 
     public static void print(int[] arr) {
         for(int i = 0; i < arr.length; i++) {
@@ -10,6 +11,7 @@ public class Assignment {
         }
         System.out.println();
     }
+
     public static void question1(int[] arr) {
         System.out.println("\n========Question 1==========\n");
         for(int i = 0; i < arr.length; i++) {
@@ -83,24 +85,56 @@ public class Assignment {
     public static void question7(int[] arr) {
         System.out.println("\n========Question 7==========\n");
         int k = arr[5];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == k) {
-                for( int j = i; j < arr.length - 1; j++) {
-                    arr[j] = arr[j+1];
-                }
-                print(arr);
-                return;
-            }
+        int pos = 5;
+        for( int j = pos; j < arr.length - 1; j++) {
+            arr[j] = arr[j+1];
         }
+        print(arr);;
     }
 
     public static void question8(int[] arr) {
         System.out.println("\n========Question 8==========\n");
         int[] arrCopy = new int[arr.length];
         for(int i = 0; i < arr.length; i++) {
-            arrCopy[i] = arr[ i];
+            arrCopy[i] = arr[ i ];
          }
         print(arrCopy);
+    }
+
+    public static void question9(int[] arr) {
+        System.out.println("\n========Question 9==========\n");
+        int k = 10;
+        int pos = 5;
+        for (int j = arr.length - 1; j > pos; j--) {
+            arr[j] = arr[j - 1];
+        }
+        arr[pos] = k;
+        print(arr);
+    }
+
+    public static void question10(int[] arr) {
+        System.out.println("\n========Question 10==========\n");
+        int min = 20, max = -1;
+        for( int i = arr.length-1; i >= 0; i--) {
+            if(arr[i] < min)
+                min = arr[i];
+
+            if(arr[i] > max)
+                max = arr[i];
+        }
+        System.out.println("minimum value: " + min + " Maximum value: " + max);
+    }
+
+
+    public static void question11(int[] arr) {
+        System.out.println("\n========Question 11==========\n");
+        for( int i = 0; i < arr.length/2; i++) {
+            int tmp = arr[i];
+            arr[i] = arr[arr.length-i-1];
+            arr[arr.length-i-1] = tmp;
+
+        }
+        print(arr);
     }
 
     public static void main(String[] args) {
@@ -118,6 +152,19 @@ public class Assignment {
         question6(arr);
         question7(arr);
         question8(arr);
-        //question9(arr);
+        question9(arr);
+        question10(arr);
+        question11(arr);
+        /*
+        question12(arr);
+        question13(arr);
+        question14(arr);
+        question15(arr);
+        question16(arr);
+        question17(arr);
+        question18(arr);
+        question19(arr);
+        question20(arr);
+         */
     }
 }
