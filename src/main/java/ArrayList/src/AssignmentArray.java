@@ -137,6 +137,64 @@ public class AssignmentArray {
         print(arr);
     }
 
+    public static void question12(int[] arr) {
+        System.out.println("\n========Question 12==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question13(int[] arr) {
+        System.out.println("\n========Question 13==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question14(int[] arr) {
+        System.out.println("\n========Question 14==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question15(int[] arr) {
+        System.out.println("\n========Question 15==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question16(int[] arr) {
+        System.out.println("\n========Question 16==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question17(int[] arr) {
+        System.out.println("\n========Question 17==========\n");
+
+        print(arr);
+    }
+
+
+    public static void question18(int[] arr) {
+        System.out.println("\n========Question 18==========\n");
+
+        print(arr);
+    }
+    public static void question19(int[] arr) {
+        System.out.println("\n========Question 19==========\n");
+
+        print(arr);
+    }
+
+    public static void question20(int[] arr) {
+        System.out.println("\n========Question 20==========\n");
+
+        print(arr);
+    }
     public static void main(String[] args) {
         int[]  arr = new int[10];
         Random randNum = new Random();
@@ -155,7 +213,6 @@ public class AssignmentArray {
         question9(arr);
         question10(arr);
         question11(arr);
-        /*
         question12(arr);
         question13(arr);
         question14(arr);
@@ -165,6 +222,5 @@ public class AssignmentArray {
         question18(arr);
         question19(arr);
         question20(arr);
-         */
     }
 }
