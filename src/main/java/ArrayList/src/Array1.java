@@ -1,6 +1,6 @@
 package ArrayList.src;
 
-public class Array {
+public class Array1 {
 
     public static void main(String[] args) {
         double[] a = new double[5];
