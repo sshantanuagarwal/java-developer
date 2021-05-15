@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class TwoDimensionalArray1 {
 
+    public static final int N = 3;
+
     public static void print(int[][] arr) {
         for(int i =0; i < arr.length; i ++ ) {
             // arr[i] <- i th row
@@ -28,7 +30,7 @@ public class TwoDimensionalArray1 {
 
     public static void main(String[] args) {
 
-        int[][] arr = new int[3][3];
+        int[][] arr = new int[N][N];
 
         arr = insert(arr);
         print(arr);

@@ -55,7 +55,7 @@ public class Assignment {
 
 
     public static void question5(int[] arr) {
-        System.out.println("\n========Question 4==========\n");
+        System.out.println("\n========Question 5==========\n");
         int k = 10;
         boolean found = false;
         for(int i = 0; i < arr.length; i++) {
@@ -64,42 +64,50 @@ public class Assignment {
                 break;
             }
         }
-        System.out.println("Element " + k + "is " +
-                (found ? "found" : "not found") + "in array"  );
+        System.out.println("Element " + k + " is " +
+                (found ? "found" : "not found") + " in array"  );
     }
 
 
     public static void question6(int[] arr) {
         System.out.println("\n========Question 6==========\n");
-        int k = 10;
-        boolean found = false;
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == k) {
-                found = true;
-                break;
-            }
-        }
-        System.out.println("Element " + k + "is " +
-                (found ? "found" : "not found") + "in array"  );
-    }
-
-    public static void question7(int[] arr) {
-        System.out.println("\n========Question 6==========\n");
         int k = arr[5];
-        boolean found = false;
         for(int i = 0; i < arr.length; i++) {
             if(arr[i] == k) {
                 System.out.println("Element " + k + "is in array at index " + i  );
-                break;
+                return;
             }
         }
+    }
+
+    public static void question7(int[] arr) {
+        System.out.println("\n========Question 7==========\n");
+        int k = arr[5];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == k) {
+                for( int j = i; j < arr.length - 1; j++) {
+                    arr[j] = arr[j+1];
+                }
+                print(arr);
+                return;
+            }
+        }
+    }
+
+    public static void question8(int[] arr) {
+        System.out.println("\n========Question 8==========\n");
+        int[] arrCopy = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            arrCopy[i] = arr[ i];
+         }
+        print(arrCopy);
     }
 
     public static void main(String[] args) {
         int[]  arr = new int[10];
         Random randNum = new Random();
         for (int i = 0; i < 10; i++) {
-            arr[i] = randNum.nextInt() % 10;
+            arr[i] = Math.abs(randNum.nextInt()) % 20;
         }
         print(arr);
         question1(arr);
@@ -109,7 +117,7 @@ public class Assignment {
         question5(arr);
         question6(arr);
         question7(arr);
-        //question8(arr);
+        question8(arr);
         //question9(arr);
     }
 }
