@@ -1,6 +1,6 @@
 package ArrayList.src;
 
-public class TwoDimensionalArray {
+public class TwoDimensionalArray2 {
 
     public static void print(int[][] arr) {
         for(int i =0; i < arr.length; i ++ ) {
