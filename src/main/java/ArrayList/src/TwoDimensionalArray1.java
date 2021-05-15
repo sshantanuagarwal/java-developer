@@ -73,12 +73,8 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void main(String[] args) {
-
 		int[][] arr1 = new int[N][M];
 		int[][] arr2 = new int[N][M];
-		int[][] resultArray = new int[N][M];
-		int[][] MultiresultArray = new int[N][N];
-
 		insert(arr1);
 		insert(arr2);
 		add(arr1,arr2);
