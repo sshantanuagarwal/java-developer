@@ -53,7 +53,7 @@ public class TwoDimensionalArray1 {
 		print(resultArray);
 	}
 
-	public static void transpose (int[][] arr){
+	public static void transpose(int[][] arr){
 		int[][] resultArray = new int[M][N];
 		for( int i =0 ; i < N; i ++ ) {
 			for(int j = 0; j < M; j++ ){
@@ -61,6 +61,15 @@ public class TwoDimensionalArray1 {
 			}
 		}
 		print(resultArray);
+	}
+
+	public static void transposeInline(int[][] arr) {
+		// Write you code here @suresh
+	}
+
+	public static void printBoundaryInline(int[][] arr) {
+		// Write you code here @suresh
+
 	}
 
 	public static void main(String[] args) {
