@@ -1,4 +1,4 @@
-package ArrayList.src;
+package ArrayList;
 
 public class TwoDimensionalArray2 {
 
