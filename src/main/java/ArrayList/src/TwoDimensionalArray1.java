@@ -8,6 +8,7 @@ public class TwoDimensionalArray1 {
 	public static final int M = 3;
 
 	public static void print(int[][] arr) {
+		System.out.println("=========Array:============");
 		for(int i =0; i < arr.length; i ++ ) {
 			// arr[i] <- i th row
 
@@ -21,6 +22,7 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void insert( int[][] arr) {
+
 		Random rand = new Random();
 		for( int i =0 ; i < arr.length; i ++ ) {
 			for(int j = 0; j < arr[i].length; j++ ){
@@ -31,6 +33,8 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void add (int[][] arr1, int[][] arr2){
+		System.out.println("=========Addition:============");
+
 		int[][] resultArray = new int[N][M];
 		for( int i =0 ; i < N; i ++ ) {
 			for(int j = 0; j < M; j++ ){
@@ -41,6 +45,8 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void multiply (int[][] arr1, int[][] arr2){
+		System.out.println("=========Multiplication:============");
+
 		int[][] resultArray = new int[N][M];
 		for( int i =0 ; i < N; i ++ ) {
 			for(int j = 0; j < M; j++ ){
@@ -54,6 +60,8 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void transpose(int[][] arr){
+		System.out.println("=========Tranposition:============");
+
 		int[][] resultArray = new int[M][N];
 		for( int i =0 ; i < N; i ++ ) {
 			for(int j = 0; j < M; j++ ){
@@ -64,11 +72,11 @@ public class TwoDimensionalArray1 {
 	}
 
 	public static void transposeInline(int[][] arr) {
-		// Write you code here @suresh
+		System.out.println("=========Transposition Inline:============");
 	}
 
 	public static void printBoundaryInline(int[][] arr) {
-		// Write you code here @suresh
+		System.out.println("=========Print Boundary Inline:============");
 
 	}
 
